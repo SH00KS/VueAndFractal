@@ -1,0 +1,31 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Wishbone</title>
+
+</head>
+<body>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<div id="demo">
+	<am-button :action="test">Action</am-button>
+<am-button href="#hola">Link</am-button>
+<am-button disabled>Disabled</am-button>
+<am-button loading>Loading</am-button>
+<am-button big>Big</am-button>
+</div>
+<script src="http://localhost:4000/client.js"></script>
+<script>
+	new Vue({
+	  el: '#demo',
+	  methods:{
+	  	test: function(){
+	  		console.log('✔');
+	  	}
+	  }
+	})
+</script>
+</body>
+</html>

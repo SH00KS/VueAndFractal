@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../themes/mandelbrot/favicon.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.2.1" type="text/css">
+
+
+<title>Filters | VFF</title>
+
+</head>
+<body>
+
+
+
+<div class="Frame" id="frame">
+
+    <div class="Frame-header">
+        <div class="Header">
+    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+        <svg class="Header-navToggleIcon Header-navToggleIcon--open" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
+</svg>
+
+        <svg class="Header-navToggleIcon Header-navToggleIcon--closed" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+</svg>
+
+    </button>
+    <a href="../../index.html" class="Header-title" data-pjax>VFF</a>
+</div>
+
+    </div>
+
+    <div class="Frame-body" data-role="body">
+
+        <div class="Frame-panel Frame-panel--main" data-role="main">
+            <div class="Frame-inner" id="pjax-container">
+            
+
+
+    
+    
+
+<div class="Pen" data-behaviour="pen" id="pen-337d4533964286e562ee73f7705bedfb">
+
+    
+
+    <div class="Pen-panel Pen-header">
+    <h1 class="Pen-title">
+        <a class="Pen-previewLink" href="../preview/filters.html" title="Component preview">
+            Filters
+            <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+
+        </a>
+    </h1>
+    
+
+<div class="Status Status--tag">
+
+<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Ready</label>
+
+</div>
+
+
+</div>
+
+
+    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-337d4533964286e562ee73f7705bedfb">
+    <div class="Preview-wrapper" data-role="resizer">
+        <div class="Preview-resizer">
+            
+             <iframe
+                class="Preview-iframe"
+                data-role="window"
+                src="../preview/filters.html"
+                sandbox="allow-same-origin allow-scripts allow-forms allow-modals"
+                 style=""
+                marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
+            </iframe>
+        </div>
+        <div class="Preview-handle" data-role="resize-handle"></div>
+        <div class="Preview-overlay"></div>
+    </div>
+</div>
+
+
+    <div class="Pen-handle Pen-handle--browser" data-role="resize-handle"></div>
+
+    <div class="Pen-panel Pen-info" data-role="info">
+    <div class="Browser" data-behaviour="browser" id="browser-337d4533964286e562ee73f7705bedfb">
+
+    
+
+<div class="Browser-controls">
+    <ul class="Browser-tabs">
+        
+        
+        <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
+            <a href="#browser-337d4533964286e562ee73f7705bedfb-panel-html">HTML</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--view" data-role="tab">
+            <a href="#browser-337d4533964286e562ee73f7705bedfb-panel-view">View</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--context" data-role="tab">
+            <a href="#browser-337d4533964286e562ee73f7705bedfb-panel-context">Context</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--resources" data-role="tab">
+            <a href="#browser-337d4533964286e562ee73f7705bedfb-panel-assets">Assets</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--info" data-role="tab">
+            <a href="#browser-337d4533964286e562ee73f7705bedfb-panel-info">Info</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--notes" data-role="tab">
+            <a href="#browser-337d4533964286e562ee73f7705bedfb-panel-notes">Notes</a>
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+    
+    
+<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-337d4533964286e562ee73f7705bedfb-panel-html">
+    <code class="Code Code--lang-html">
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">am-filters</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">am-filters</span>&gt;</span></pre>
+        
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-337d4533964286e562ee73f7705bedfb-panel-view">
+    <code class="Code Code--lang-html">
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">am-filters</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">am-filters</span>&gt;</span></pre>
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-337d4533964286e562ee73f7705bedfb-panel-context">
+    <code class="Code Code--lang-json">
+        
+            
+            <pre><span class="hljs-comment">/* No context defined for this component. */</span></pre>
+            
+        
+    </code>
+</div>
+
+    
+    
+
+
+<div class="Browser-panel Browser-resources" data-role="tab-panel" id="browser-337d4533964286e562ee73f7705bedfb-panel-assets">
+    <div class="FileBrowser">
+
+        <div class="FileBrowser-selectWrapper">
+            <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
+            <select class="FileBrowser-select" id="filebrowser-select">
+                
+                <option value="file-4819a2f8f2dcfb0f301246ef37e45801">Filters.vue</option>
+                
+            </select>
+        </div>
+
+        
+        <div class="FileBrowser-item is-active" id="file-4819a2f8f2dcfb0f301246ef37e45801" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-Vue FileBrowser-code">
+                                <pre><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-filters card"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">:class</span>=<span class="hljs-string">"{open: name.open}"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">v-on:click</span>=<span class="hljs-string">"name.open = !name.open"</span>&gt;</span> Name<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+      
+      <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">v-on:submit.prevent</span>=<span class="hljs-string">"nameChange"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"name.input"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">am-button</span> <span class="hljs-attr">:action</span>=<span class="hljs-string">"nameChange"</span>&gt;</span>Accept<span class="hljs-tag">&lt;/<span class="hljs-name">am-button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+    
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"price"</span> <span class="hljs-attr">:class</span>=<span class="hljs-string">"{open: price.open}"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">v-on:click</span>=<span class="hljs-string">"price.open = !price.open"</span>&gt;</span> Price<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+      
+      <span class="hljs-tag">&lt;<span class="hljs-name">am-range</span> <span class="hljs-attr">:min</span>=<span class="hljs-string">"min"</span> <span class="hljs-attr">:max</span>=<span class="hljs-string">"max"</span> <span class="hljs-attr">:step</span>=<span class="hljs-string">"100"</span> <span class="hljs-attr">v-on:change</span>=<span class="hljs-string">"rangeChange"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">am-range</span>&gt;</span>  
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"stars"</span> <span class="hljs-attr">:class</span>=<span class="hljs-string">"{open: stars.open}"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">v-on:click</span>=<span class="hljs-string">"stars.open = !stars.open"</span>&gt;</span> Stars<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+      
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">disabled</span> <span class="hljs-attr">checked</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"all"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"all"</span>&gt;</span> All<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"stars.selected"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"5"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"5"</span> <span class="hljs-attr">v-on:change</span>=<span class="hljs-string">"emitChange"</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">am-rating</span> <span class="hljs-attr">:stars</span>=<span class="hljs-string">"5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">am-rating</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"stars.selected"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"4"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"4"</span> <span class="hljs-attr">v-on:change</span>=<span class="hljs-string">"emitChange"</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">am-rating</span> <span class="hljs-attr">:stars</span>=<span class="hljs-string">"4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">am-rating</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"stars.selected"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"3"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"3"</span> <span class="hljs-attr">v-on:change</span>=<span class="hljs-string">"emitChange"</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">am-rating</span> <span class="hljs-attr">:stars</span>=<span class="hljs-string">"3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">am-rating</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"stars.selected"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">v-on:change</span>=<span class="hljs-string">"emitChange"</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">am-rating</span> <span class="hljs-attr">:stars</span>=<span class="hljs-string">"2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">am-rating</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"stars.selected"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">v-on:change</span>=<span class="hljs-string">"emitChange"</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">am-rating</span> <span class="hljs-attr">:stars</span>=<span class="hljs-string">"1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">am-rating</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+    <span class="hljs-attr">props</span>: {
+      <span class="hljs-attr">min</span>: <span class="hljs-built_in">Number</span>,
+      <span class="hljs-attr">max</span>: <span class="hljs-built_in">Number</span>,
+      <span class="hljs-attr">collapsed</span>: {
+        <span class="hljs-attr">type</span>: <span class="hljs-built_in">Boolean</span>,
+        <span class="hljs-attr">default</span>: <span class="hljs-literal">false</span>
+      }
+    },
+    data(){
+      <span class="hljs-keyword">return</span> {
+        <span class="hljs-attr">name</span>: {
+          <span class="hljs-attr">open</span>: !<span class="hljs-keyword">this</span>.collapsed,
+          <span class="hljs-attr">value</span>: <span class="hljs-string">''</span>,
+          <span class="hljs-attr">input</span>: <span class="hljs-string">''</span>
+        },
+        <span class="hljs-attr">price</span>: {
+          <span class="hljs-attr">open</span>: !<span class="hljs-keyword">this</span>.collapsed,
+          <span class="hljs-attr">range</span>: {
+            <span class="hljs-attr">min</span>: <span class="hljs-number">0</span>,
+            <span class="hljs-attr">max</span>: <span class="hljs-literal">Infinity</span>
+          }
+        },
+        <span class="hljs-attr">stars</span>: {
+          <span class="hljs-attr">open</span>: !<span class="hljs-keyword">this</span>.collapsed,
+          <span class="hljs-attr">selected</span>: []
+        }
+      }
+    },
+    <span class="hljs-attr">methods</span>:{
+      rangeChange(e){
+        <span class="hljs-keyword">this</span>.price.range[e.name] = e.value;
+        <span class="hljs-keyword">this</span>.emitChange();
+      },
+      nameChange(){
+        <span class="hljs-keyword">this</span>.name.value = <span class="hljs-keyword">this</span>.name.input.toLowerCase();
+        <span class="hljs-keyword">this</span>.emitChange();
+      },
+      emitChange(){
+        <span class="hljs-keyword">this</span>.$emit(<span class="hljs-string">'filter'</span>, {
+          <span class="hljs-attr">price</span>: {
+            <span class="hljs-attr">min</span>: <span class="hljs-built_in">Math</span>.min(<span class="hljs-keyword">this</span>.$data.price.range.min,<span class="hljs-keyword">this</span>.$data.price.range.max), 
+            <span class="hljs-attr">max</span>: <span class="hljs-built_in">Math</span>.max(<span class="hljs-keyword">this</span>.$data.price.range.min,<span class="hljs-keyword">this</span>.$data.price.range.max)
+          }, 
+          <span class="hljs-attr">name</span>: <span class="hljs-keyword">this</span>.$data.name.value, 
+          <span class="hljs-attr">stars</span>: <span class="hljs-keyword">this</span>.$data.stars.selected
+        });
+      },
+      toggleAll(){
+        <span class="hljs-keyword">this</span>.name.open = !<span class="hljs-keyword">this</span>.name.open;
+        <span class="hljs-keyword">this</span>.price.open = !<span class="hljs-keyword">this</span>.price.open;
+        <span class="hljs-keyword">this</span>.stars.open = !<span class="hljs-keyword">this</span>.stars.open;
+      }
+    }
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">scoped</span>&gt;</span><span class="css">
+  <span class="hljs-selector-tag">section</span>{
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">10px</span> <span class="hljs-number">20px</span>;
+    <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">3px</span> solid <span class="hljs-number">#eee</span>;
+    <span class="hljs-attribute">max-height</span>: <span class="hljs-number">0px</span>;
+    <span class="hljs-attribute">transition-duration</span>: <span class="hljs-number">0.4s</span>;
+    <span class="hljs-attribute">overflow</span>: hidden;
+    <span class="hljs-attribute">position</span>: relative;
+  }
+  <span class="hljs-selector-tag">section</span><span class="hljs-selector-pseudo">:last-child</span>{
+    <span class="hljs-attribute">border</span>: none;
+  }
+  <span class="hljs-selector-tag">section</span><span class="hljs-selector-class">.open</span>{
+    <span class="hljs-attribute">max-height</span>: <span class="hljs-number">100vh</span>;
+  }
+  <span class="hljs-selector-tag">section</span> <span class="hljs-selector-tag">h4</span>{
+    <span class="hljs-attribute">display</span>: block;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">position</span>: relative;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">15px</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#1b71bd</span>;
+    <span class="hljs-attribute">cursor</span>: pointer;
+    <span class="hljs-attribute">margin-top</span>: -<span class="hljs-number">10px</span>;
+  }
+  <span class="hljs-selector-tag">section</span> <span class="hljs-selector-tag">h4</span><span class="hljs-selector-pseudo">:before</span>{
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">display</span>: block;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">10px</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1rem</span>;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1rem</span>;
+  }
+  <span class="hljs-selector-class">.name</span> <span class="hljs-selector-tag">h4</span><span class="hljs-selector-pseudo">:before</span>{
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">'⚲'</span>;
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">rotate</span>(-45deg);
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.5rem</span>;
+  }
+  <span class="hljs-selector-class">.price</span> <span class="hljs-selector-tag">h4</span><span class="hljs-selector-pseudo">:before</span>{
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">'$'</span>;
+  }
+  <span class="hljs-selector-class">.stars</span> <span class="hljs-selector-tag">h4</span><span class="hljs-selector-pseudo">:before</span>{
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">'★'</span>;
+  }
+  <span class="hljs-selector-tag">h4</span><span class="hljs-selector-pseudo">:after</span>{
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">'▲'</span>;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">color</span>: darkblue;
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">scaleY</span>(0.7) <span class="hljs-built_in">rotate</span>(180deg);
+    <span class="hljs-attribute">transition-duration</span>: <span class="hljs-number">0.5s</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#1b71bd</span>;
+  }
+  <span class="hljs-selector-class">.open</span> <span class="hljs-selector-tag">h4</span><span class="hljs-selector-pseudo">:after</span>{
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">scaleY</span>(0.7);
+  }
+  <span class="hljs-selector-class">.name</span> <span class="hljs-selector-tag">form</span>{
+    <span class="hljs-attribute">display</span>: flex;
+  }
+  <span class="hljs-selector-class">.name</span> <span class="hljs-selector-tag">input</span>{
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">1px</span>;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#ccc</span>;
+    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">1px</span> <span class="hljs-number">0</span> <span class="hljs-built_in">rgba</span>(0,0,0,0.5) inset; 
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">21px</span>;
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>;
+    <span class="hljs-attribute">flex-grow</span>: <span class="hljs-number">1</span>;
+  }
+  <span class="hljs-selector-class">.price</span> <span class="hljs-selector-class">.range</span>{
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">98%</span>;
+  }
+  <span class="hljs-selector-class">.stars</span> <span class="hljs-selector-class">.am-rating</span>{
+    <span class="hljs-attribute">display</span>: inline;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/filters/Filters.vue"><span>/components/raw/filters/Filters.vue</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">frontend\src\components\02-Modules\Filters\Filters.vue</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">4.2 KB</span>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+
+
+    
+    <div class="Browser-panel" data-role="tab-panel" id="browser-337d4533964286e562ee73f7705bedfb-panel-info">
+    <ul class="Meta">
+        <li class="Meta-item">
+            <strong class="Meta-key">Handle:</strong>
+            <span class="Meta-value">@filters</span>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Preview:</strong>
+            <span class="Meta-value">
+                <ul>
+                    <li><a data-no-pjax href="../preview/filters.html"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                    <li><a data-no-pjax href="../render/filters.html"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                </ul>
+            </span>
+        </li>
+        <li class="Meta-item">
+            <strong class="Meta-key">Filesystem Path:</strong>
+            <span class="Meta-value">frontend\src\components\02-Modules\Filters\Filters.html</span>
+        </li>
+        
+        
+    </ul>
+</div>
+
+    
+    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-337d4533964286e562ee73f7705bedfb-panel-notes">
+    <div class="Prose Prose--condensed">
+        
+        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
+        
+    </div>
+</div>
+
+    
+
+</div>
+
+</div>
+
+
+    
+
+</div>
+
+
+            </div>
+        </div>
+
+        <div class="Frame-handle" data-role="frame-resize-handle"></div>
+        
+        <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
+            <nav class="Navigation">
+
+    
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-components">
+    <h3 class="Tree-title">components</h3>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-components">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Components</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button.html" data-pjax>
+                <span>Button</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="example.html" data-pjax>
+                <span>Example</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="range.html" data-pjax>
+                <span>Range</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="rating.html" data-pjax>
+                <span>Rating</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-modules">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Modules</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
+                <span>Filters</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hotel.html" data-pjax>
+                <span>Hotel</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="map.html" data-pjax>
+                <span>Map</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-pages">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Pages</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="search-results.html" data-pjax>
+                <span>Search Results</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+
+    
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-docs">
+    <h3 class="Tree-title">documentation</h3>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/backend.html" data-pjax>
+                <span>Backend</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/frontend.html" data-pjax>
+                <span>Frontend</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../index.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+
+    
+
+
+</nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.1"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../themes/mandelbrot/favicon.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.2.1" type="text/css">
+
+
+<title>Range | VFF</title>
+
+</head>
+<body>
+
+
+
+<div class="Frame" id="frame">
+
+    <div class="Frame-header">
+        <div class="Header">
+    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+        <svg class="Header-navToggleIcon Header-navToggleIcon--open" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
+</svg>
+
+        <svg class="Header-navToggleIcon Header-navToggleIcon--closed" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+</svg>
+
+    </button>
+    <a href="../../index.html" class="Header-title" data-pjax>VFF</a>
+</div>
+
+    </div>
+
+    <div class="Frame-body" data-role="body">
+
+        <div class="Frame-panel Frame-panel--main" data-role="main">
+            <div class="Frame-inner" id="pjax-container">
+            
+
+
+    
+    
+
+<div class="Pen" data-behaviour="pen" id="pen-31f270b99598c88c64f04d41bdb9e662">
+
+    
+
+    <div class="Pen-panel Pen-header">
+    <h1 class="Pen-title">
+        <a class="Pen-previewLink" href="../preview/range.html" title="Component preview">
+            Range
+            <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+
+        </a>
+    </h1>
+    
+
+<div class="Status Status--tag">
+
+<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Ready</label>
+
+</div>
+
+
+</div>
+
+
+    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-31f270b99598c88c64f04d41bdb9e662">
+    <div class="Preview-wrapper" data-role="resizer">
+        <div class="Preview-resizer">
+            
+             <iframe
+                class="Preview-iframe"
+                data-role="window"
+                src="../preview/range.html"
+                sandbox="allow-same-origin allow-scripts allow-forms allow-modals"
+                 style=""
+                marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
+            </iframe>
+        </div>
+        <div class="Preview-handle" data-role="resize-handle"></div>
+        <div class="Preview-overlay"></div>
+    </div>
+</div>
+
+
+    <div class="Pen-handle Pen-handle--browser" data-role="resize-handle"></div>
+
+    <div class="Pen-panel Pen-info" data-role="info">
+    <div class="Browser" data-behaviour="browser" id="browser-31f270b99598c88c64f04d41bdb9e662">
+
+    
+
+<div class="Browser-controls">
+    <ul class="Browser-tabs">
+        
+        
+        <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
+            <a href="#browser-31f270b99598c88c64f04d41bdb9e662-panel-html">HTML</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--view" data-role="tab">
+            <a href="#browser-31f270b99598c88c64f04d41bdb9e662-panel-view">View</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--context" data-role="tab">
+            <a href="#browser-31f270b99598c88c64f04d41bdb9e662-panel-context">Context</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--resources" data-role="tab">
+            <a href="#browser-31f270b99598c88c64f04d41bdb9e662-panel-assets">Assets</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--info" data-role="tab">
+            <a href="#browser-31f270b99598c88c64f04d41bdb9e662-panel-info">Info</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--notes" data-role="tab">
+            <a href="#browser-31f270b99598c88c64f04d41bdb9e662-panel-notes">Notes</a>
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+    
+    
+<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-31f270b99598c88c64f04d41bdb9e662-panel-html">
+    <code class="Code Code--lang-html">
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">am-range</span> <span class="hljs-attr">:min</span>=<span class="hljs-string">"1000"</span> <span class="hljs-attr">:max</span>=<span class="hljs-string">"14000"</span> <span class="hljs-attr">:step</span>=<span class="hljs-string">"1000"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">am-range</span>&gt;</span></pre>
+        
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-31f270b99598c88c64f04d41bdb9e662-panel-view">
+    <code class="Code Code--lang-html">
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">am-range</span> <span class="hljs-attr">:min</span>=<span class="hljs-string">"1000"</span> <span class="hljs-attr">:max</span>=<span class="hljs-string">"14000"</span> <span class="hljs-attr">:step</span>=<span class="hljs-string">"1000"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">am-range</span>&gt;</span></pre>
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-31f270b99598c88c64f04d41bdb9e662-panel-context">
+    <code class="Code Code--lang-json">
+        
+            
+            <pre><span class="hljs-comment">/* No context defined for this component. */</span></pre>
+            
+        
+    </code>
+</div>
+
+    
+    
+
+
+<div class="Browser-panel Browser-resources" data-role="tab-panel" id="browser-31f270b99598c88c64f04d41bdb9e662-panel-assets">
+    <div class="FileBrowser">
+
+        <div class="FileBrowser-selectWrapper">
+            <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
+            <select class="FileBrowser-select" id="filebrowser-select">
+                
+                <option value="file-f90e4979febc09aa63eaa683c8b05e69">Range.vue</option>
+                
+                <option value="file-11ececf6435c13dac45a104fc1af5047">range.css</option>
+                
+                <option value="file-401fb7584578b8a392d469797d521807">range.js</option>
+                
+            </select>
+        </div>
+
+        
+        <div class="FileBrowser-item is-active" id="file-f90e4979febc09aa63eaa683c8b05e69" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-Vue FileBrowser-code">
+                                <pre>&lt;<span class="hljs-keyword">template</span>&gt;
+  &lt;div <span class="hljs-keyword">class</span>="range" :data-min="min" :data-max="max" :data-step="step"&gt;
+      &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>="hidden" <span class="hljs-type">name</span>="min" :<span class="hljs-keyword">value</span>="min" /&gt;
+      &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>="hidden" <span class="hljs-type">name</span>="max" :<span class="hljs-keyword">value</span>="max" /&gt;
+  &lt;/div&gt;
+&lt;/<span class="hljs-keyword">template</span>&gt;
+
+&lt;script&gt;
+  <span class="hljs-keyword">import</span> "./range.js" // <span class="hljs-keyword">from</span> https://github.com/hitsthings/multi-slider-range
+
+  export <span class="hljs-keyword">default</span> {
+    props: {
+      min: {
+        <span class="hljs-keyword">type</span>: Number,
+        <span class="hljs-keyword">default</span>: <span class="hljs-number">1</span>
+      },
+      max: {
+        <span class="hljs-keyword">type</span>: Number,
+        <span class="hljs-keyword">default</span>: <span class="hljs-number">100</span>
+      },
+      step: {
+        <span class="hljs-keyword">type</span>: Number,
+        <span class="hljs-keyword">default</span>: <span class="hljs-number">10</span>
+      }
+    },
+    mounted(){
+        initRangeSliders();
+        this.$el.addEventListener(<span class="hljs-string">'change'</span>, (e) =&gt; {
+            this.$emit(<span class="hljs-string">'change'</span>, {<span class="hljs-type">name</span>: e.target.getAttribute(<span class="hljs-string">'data-name'</span>),<span class="hljs-keyword">value</span>:e.target.getAttribute(<span class="hljs-string">'data-value'</span>)})
+        });
+    }
+  }
+&lt;/script&gt;
+&lt;style src="./range.css"&gt;&lt;/style&gt;</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/range/Range.vue"><span>/components/raw/range/Range.vue</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">frontend\src\components\01-Components\Range\Range.vue</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">813 Bytes</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="FileBrowser-item" id="file-11ececf6435c13dac45a104fc1af5047" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-CSS FileBrowser-code">
+                                <pre><span class="hljs-selector-class">.range</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">display</span>: inline-block;
+    <span class="hljs-attribute">vertical-align</span>: top;
+    <span class="hljs-attribute">position</span>: relative;
+}
+<span class="hljs-selector-class">.range</span><span class="hljs-selector-pseudo">:before</span> {
+    <span class="hljs-attribute">content </span>: <span class="hljs-string">' '</span>;
+    <span class="hljs-attribute">vertical-align</span>: middle;
+    <span class="hljs-attribute">display</span>: inline-block;
+    <span class="hljs-attribute">height </span>: <span class="hljs-number">4px</span>;
+    <span class="hljs-attribute">width</span>:<span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">-webkit-box-sizing</span>: border-box;
+    <span class="hljs-attribute">-moz-box-sizing</span>: border-box;
+    <span class="hljs-attribute">box-sizing</span>: border-box;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#e9e9e9</span>;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#d9d9d9</span>;
+    <span class="hljs-attribute">margin-top</span>: -<span class="hljs-number">4px</span>;
+}
+<span class="hljs-selector-class">.range</span> &gt; <span class="hljs-selector-class">.slider</span>,
+<span class="hljs-selector-class">.range</span> &gt; <span class="hljs-selector-class">.slider</span><span class="hljs-selector-pseudo">:before</span>,
+<span class="hljs-selector-class">.range</span> &gt; <span class="hljs-selector-class">.slider</span><span class="hljs-selector-pseudo">:after</span> {
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#aaa</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#eee</span>;
+}
+<span class="hljs-selector-class">.range</span> &gt; <span class="hljs-selector-class">.slider</span> {
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">12px</span>;
+    <span class="hljs-attribute">border-bottom</span>: none;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">1px</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">9px</span>;
+}
+<span class="hljs-selector-class">.range</span> &gt; <span class="hljs-selector-class">.slider</span><span class="hljs-selector-pseudo">:before</span>,
+<span class="hljs-selector-class">.range</span> &gt; <span class="hljs-selector-class">.slider</span><span class="hljs-selector-pseudo">:after</span> {
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">width</span>:<span class="hljs-number">0</span>;
+    <span class="hljs-attribute">display</span>:block;
+    <span class="hljs-attribute">content </span>: <span class="hljs-string">''</span>;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">12px</span>;
+}
+<span class="hljs-selector-class">.range</span> &gt; <span class="hljs-selector-class">.slider</span><span class="hljs-selector-pseudo">:before</span> {
+    <span class="hljs-attribute">background-color</span>:transparent;
+    <span class="hljs-attribute">border-top</span>: <span class="hljs-number">6px</span> solid <span class="hljs-number">#aaa</span>;
+    <span class="hljs-attribute">border-left</span>: <span class="hljs-number">6px</span> solid transparent;
+    <span class="hljs-attribute">border-right</span>: <span class="hljs-number">5px</span> solid transparent;
+    <span class="hljs-attribute">border-bottom</span>: none;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">left</span>: -<span class="hljs-number">1px</span>;
+}
+<span class="hljs-selector-class">.range</span> &gt; <span class="hljs-selector-class">.slider</span><span class="hljs-selector-pseudo">:after</span> {
+    <span class="hljs-attribute">background-color</span>:transparent;
+    <span class="hljs-attribute">border-top</span>: <span class="hljs-number">4px</span> solid <span class="hljs-number">#eee</span>;
+    <span class="hljs-attribute">border-left</span>: <span class="hljs-number">5px</span> solid transparent;
+    <span class="hljs-attribute">border-right</span>: <span class="hljs-number">4px</span> solid transparent;
+    <span class="hljs-attribute">border-bottom</span>: none;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">0px</span>;
+}
+<span class="hljs-selector-class">.range</span> &gt; <span class="hljs-selector-class">.slider</span><span class="hljs-selector-pseudo">:hover</span> {
+    <span class="hljs-attribute">border-color</span>: <span class="hljs-number">#9bd</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#e9f3fc</span>;
+}
+<span class="hljs-selector-class">.range</span> &gt; <span class="hljs-selector-class">.slider</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">:before</span> {
+    <span class="hljs-attribute">border-top-color</span>: <span class="hljs-number">#9bd</span>;
+}
+<span class="hljs-selector-class">.range</span> &gt; <span class="hljs-selector-class">.slider</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">:after</span> {
+    <span class="hljs-attribute">border-top-color</span>: <span class="hljs-number">#e9f3fc</span>;
+}
+
+<span class="hljs-selector-id">#min</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">50px</span>;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+}
+<span class="hljs-selector-id">#max</span> {
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">50px</span>;
+}</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/range/range.css"><span>/components/raw/range/range.css</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">frontend\src\components\01-Components\Range\range.css</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">1.6 KB</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="FileBrowser-item" id="file-401fb7584578b8a392d469797d521807" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-JavaScript FileBrowser-code">
+                                <pre>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">each</span>(<span class="hljs-params">fn, arr</span>) </span>{
+        <span class="hljs-keyword">var</span> i = arr.length;
+        <span class="hljs-keyword">while</span>(i--) {
+            fn(arr[i]);
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">filter</span>(<span class="hljs-params">fn, arr</span>) </span>{
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> ret = [], i = <span class="hljs-number">0</span>; i &lt; arr.length; i++) {
+            <span class="hljs-keyword">if</span> (fn(arr[i])) {
+                ret.push(arr[i]);
+            }
+        }
+        <span class="hljs-keyword">return</span> ret;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reduceRight</span>(<span class="hljs-params">fn, seed, arr</span>) </span>{
+        each(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">item</span>) </span>{
+            seed = fn(seed, item);
+        }, arr);
+        <span class="hljs-keyword">return</span> seed;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">partial</span>(<span class="hljs-params">fn<span class="hljs-regexp">/*, ...args*/</span></span>) </span>{
+        <span class="hljs-keyword">var</span> args = <span class="hljs-built_in">Array</span>.prototype.slice.call(<span class="hljs-built_in">arguments</span>, <span class="hljs-number">1</span>);
+        <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">return</span> fn.apply(<span class="hljs-keyword">this</span>, args.concat(<span class="hljs-built_in">Array</span>.prototype.slice.call(<span class="hljs-built_in">arguments</span>)));
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compose</span>(<span class="hljs-params"><span class="hljs-regexp">/*...fns*/</span></span>) </span>{
+        <span class="hljs-keyword">var</span> fns = <span class="hljs-built_in">arguments</span>;
+        <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">return</span> reduceRight(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">arg, fn</span>) </span>{ <span class="hljs-keyword">return</span> fn(arg); }, <span class="hljs-built_in">arguments</span>[<span class="hljs-number">0</span>], fns);
+        };
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">invoke</span>(<span class="hljs-params">fn</span>) </span>{
+        <span class="hljs-keyword">return</span> fn.apply(<span class="hljs-keyword">this</span>, <span class="hljs-built_in">arguments</span>);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">findInput</span>(<span class="hljs-params">name, range</span>) </span>{
+        <span class="hljs-keyword">return</span> range.querySelector ?
+            range.querySelector(<span class="hljs-string">'input[name="'</span> + name + <span class="hljs-string">'"]'</span>) :
+            filter(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">el</span>) </span>{
+                <span class="hljs-keyword">return</span> el.tagName === <span class="hljs-string">'INPUT'</span> &amp;&amp; el.getAttribute(<span class="hljs-string">'name'</span>) === name;
+            }, range.children)[<span class="hljs-number">0</span>];
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">findSlider</span>(<span class="hljs-params">name, range</span>) </span>{
+        <span class="hljs-keyword">return</span> range.querySelector ?
+            range.querySelector(<span class="hljs-string">'.slider[data-name="'</span> + name + <span class="hljs-string">'"]'</span>) :
+            filter(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">el</span>) </span>{
+                <span class="hljs-keyword">return</span> hasClass(<span class="hljs-string">'slider'</span>, el) &amp;&amp; el.getAttribute(<span class="hljs-string">'data-name'</span>) === name;
+            }, range.children)[<span class="hljs-number">0</span>];
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createInput</span>(<span class="hljs-params">name, value, range</span>) </span>{
+        <span class="hljs-keyword">var</span> input = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'input'</span>);
+        input.setAttribute(<span class="hljs-string">'type'</span>, <span class="hljs-string">'hidden'</span>);
+        input.setAttribute(<span class="hljs-string">'name'</span>, name);
+        input.setAttribute(<span class="hljs-string">'value'</span>, value);
+        range.appendChild(input);
+        <span class="hljs-keyword">return</span> input;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createSlider</span>(<span class="hljs-params">name, value, range</span>) </span>{
+        <span class="hljs-keyword">var</span> slider = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);
+        slider.className = <span class="hljs-string">'slider'</span>;
+        slider.setAttribute(<span class="hljs-string">'data-name'</span>, name);
+        slider.setAttribute(<span class="hljs-string">'data-value'</span>, value);
+        slider.setAttribute(<span class="hljs-string">'tabindex'</span>, <span class="hljs-number">0</span>);
+        range.appendChild(slider);
+        <span class="hljs-keyword">return</span> slider;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getSliders</span>(<span class="hljs-params">root</span>) </span>{
+        <span class="hljs-keyword">return</span> root.querySelectorAll ?
+            root.querySelectorAll(<span class="hljs-string">'.range &gt; .slider'</span>) :
+            filter(isSlider, root.getElementsByClassName(<span class="hljs-string">'slider'</span>));
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getSliderInputs</span>(<span class="hljs-params">root</span>) </span>{
+        <span class="hljs-keyword">return</span> root.querySelectorAll ?
+            root.querySelectorAll(<span class="hljs-string">'.range &gt; input'</span>) :
+            filter(isSliderInput, root.getElementsByTagName(<span class="hljs-string">'input'</span>));
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isSlider</span>(<span class="hljs-params">el</span>) </span>{
+        <span class="hljs-keyword">return</span> hasClass(<span class="hljs-string">'slider'</span>, el) &amp;&amp; el.parentNode &amp;&amp; hasClass(<span class="hljs-string">'range'</span>, el.parentNode);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isSliderInput</span>(<span class="hljs-params">el</span>) </span>{
+        <span class="hljs-keyword">return</span> el.tagName === <span class="hljs-string">'INPUT'</span> &amp;&amp; el.parentNode &amp;&amp; hasClass(<span class="hljs-string">'range'</span>, el.parentNode);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">hasClass</span>(<span class="hljs-params">clazz, el</span>) </span>{
+        <span class="hljs-keyword">return</span> el.classList ?
+            el.classList.contains(clazz) :
+            ~((<span class="hljs-string">' '</span> + el.className + <span class="hljs-string">' '</span>).replace(<span class="hljs-regexp">/[\t\n\f\r]/g</span>, <span class="hljs-string">' '</span>).indexOf(<span class="hljs-string">' '</span> + clazz + <span class="hljs-string">' '</span>));
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getEvent</span>(<span class="hljs-params">e</span>) </span>{
+        <span class="hljs-keyword">return</span> e || <span class="hljs-built_in">window</span>.event;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">preventDefault</span>(<span class="hljs-params">e</span>) </span>{
+        e.preventDefault ? e.preventDefault() : (e.returnValue = <span class="hljs-literal">false</span>);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addListener</span>(<span class="hljs-params">type, fn, el</span>) </span>{
+        el.addEventListener ? el.addEventListener(type, fn) : el.attachEvent(type, fn);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">removeListener</span>(<span class="hljs-params">type, fn, el</span>) </span>{
+        el.removeEventListener ? el.removeEventListener(type, fn) : el.detachEvent(type, fn);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mouseXToValue</span>(<span class="hljs-params">slide, mouseX</span>) </span>{
+        <span class="hljs-keyword">var</span> ratioLeft = (mouseX - slide.rangeXStart) / slide.rangeWidth;
+        <span class="hljs-keyword">return</span> ratioLeft * slide.width + slide.min;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">nearestStep</span>(<span class="hljs-params">slide, value</span>) </span>{
+        <span class="hljs-keyword">if</span> (value &lt; slide.min) <span class="hljs-keyword">return</span> slide.min;
+        <span class="hljs-keyword">if</span> (value &gt; slide.max) <span class="hljs-keyword">return</span> slide.max;
+        
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">Math</span>.round((value - slide.min)/slide.step)*slide.step + slide.min;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getOffsetLeft</span>(<span class="hljs-params">el</span>) </span>{
+        <span class="hljs-keyword">var</span> o = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">do</span> {
+            o += el.offsetLeft;
+        } <span class="hljs-keyword">while</span>((el = el.offsetParent));
+        <span class="hljs-keyword">return</span> o;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">moveSlider</span>(<span class="hljs-params">slider, slide, value, init</span>) </span>{
+        <span class="hljs-keyword">if</span> (value &gt; slide.max) value = slide.max;
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (value &lt; slide.min) value = slide.min;
+        
+        <span class="hljs-keyword">if</span> (!init &amp;&amp; value === slide.value) <span class="hljs-keyword">return</span>;
+        
+        <span class="hljs-keyword">var</span> percent = <span class="hljs-number">100</span>*(value - slide.min) / slide.width;
+        slider.style.left = percent + <span class="hljs-string">'%'</span>;
+        slider.setAttribute(<span class="hljs-string">'data-value'</span>, value);
+        slide.input.setAttribute(<span class="hljs-string">'value'</span>, value);
+        slide.value = value;
+
+        <span class="hljs-keyword">if</span> (init) <span class="hljs-keyword">return</span>;
+        
+        <span class="hljs-keyword">var</span> evt = <span class="hljs-built_in">document</span>.createEvent(<span class="hljs-string">'HTMLEvents'</span>);
+        evt.initEvent(<span class="hljs-string">'change'</span>, <span class="hljs-literal">true</span>, <span class="hljs-literal">true</span>);
+        slider.dispatchEvent(evt);
+    }
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getSlide</span>(<span class="hljs-params">slider</span>) </span>{
+        <span class="hljs-keyword">var</span> range = slider.parentNode;
+        <span class="hljs-keyword">var</span> rangeXStart = getOffsetLeft(range);
+        <span class="hljs-keyword">var</span> rangeWidth = range.offsetWidth;
+        <span class="hljs-keyword">var</span> min = <span class="hljs-built_in">Number</span>(range.getAttribute(<span class="hljs-string">'data-min'</span>)) | <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">var</span> max = range.getAttribute(<span class="hljs-string">'data-max'</span>);
+        max = max == <span class="hljs-literal">null</span> ? <span class="hljs-number">100</span> : <span class="hljs-built_in">Number</span>(max);
+        <span class="hljs-keyword">var</span> step = <span class="hljs-built_in">Number</span>(range.getAttribute(<span class="hljs-string">'data-step'</span>)) || <span class="hljs-number">1</span>;
+        
+        <span class="hljs-keyword">var</span> value = slider.getAttribute(<span class="hljs-string">'data-value'</span>);
+        <span class="hljs-keyword">var</span> name = slider.getAttribute(<span class="hljs-string">'data-name'</span>);
+
+        <span class="hljs-keyword">var</span> input = findInput(name, range);
+        
+        <span class="hljs-keyword">var</span> slide = {
+            <span class="hljs-attr">min</span> : min,
+            <span class="hljs-attr">max</span> : max,
+            <span class="hljs-attr">width</span> : max - min,
+            <span class="hljs-attr">step</span> : step,
+            <span class="hljs-attr">value</span> : value,
+            <span class="hljs-attr">name</span> : name,
+            <span class="hljs-attr">rangeXStart</span> : rangeXStart,
+            <span class="hljs-attr">rangeWidth</span> : rangeWidth,
+            <span class="hljs-attr">input</span> : input,
+            <span class="hljs-attr">range</span> : range
+        };
+        slide.value = nearestStep(slide, value == <span class="hljs-literal">null</span> ? (max &lt; min ? min : (max + min) / <span class="hljs-number">2</span>) : <span class="hljs-built_in">Number</span>(value));
+        <span class="hljs-keyword">return</span> slide;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">beginHandleDrag</span>(<span class="hljs-params">e</span>) </span>{
+        e = getEvent(e);
+        <span class="hljs-keyword">if</span> (isSlider(e.target)) {
+            preventDefault(e);
+            
+            <span class="hljs-keyword">var</span> slider = e.target;
+            <span class="hljs-keyword">var</span> slide = getSlide(slider);
+            
+            <span class="hljs-keyword">var</span> endHandleDrag = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
+                e = getEvent(e);
+                removeListener(<span class="hljs-string">'mouseup'</span>, endHandleDrag, <span class="hljs-built_in">document</span>.documentElement);
+                removeListener(<span class="hljs-string">'mousemove'</span>, handleDrag, <span class="hljs-built_in">document</span>.documentElement);
+            };
+            <span class="hljs-keyword">var</span> handleDrag = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
+                e = getEvent(e);
+                <span class="hljs-keyword">var</span> rawValue = mouseXToValue(slide, e.pageX);
+                <span class="hljs-keyword">var</span> value = nearestStep(slide, rawValue);
+                <span class="hljs-keyword">if</span> (slide.value !== value) {
+                    moveSlider(slider, slide, value);
+                }
+            }
+            addListener(<span class="hljs-string">'mouseup'</span>, endHandleDrag, <span class="hljs-built_in">document</span>.documentElement);
+            addListener(<span class="hljs-string">'mousemove'</span>, handleDrag, <span class="hljs-built_in">document</span>.documentElement);
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handleSlide</span>(<span class="hljs-params">e</span>) </span>{
+        e = getEvent(e);
+        <span class="hljs-keyword">if</span> (e.keyCode === <span class="hljs-number">37</span> || e.keyCode === <span class="hljs-number">39</span>) { <span class="hljs-comment">// left/right</span>
+            <span class="hljs-keyword">if</span> (isSlider(e.target)) {
+                preventDefault(e);
+
+                <span class="hljs-keyword">var</span> slider = e.target;
+                <span class="hljs-keyword">var</span> slide = getSlide(slider);
+                <span class="hljs-keyword">var</span> valueAdd = e.keyCode === <span class="hljs-number">37</span> ? <span class="hljs-number">-1</span> : +<span class="hljs-number">1</span>;
+                moveSlider(slider, slide, slide.value + valueAdd);
+            }
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">initializeSlider</span>(<span class="hljs-params">slider</span>) </span>{
+        <span class="hljs-keyword">var</span> slide = getSlide(slider);
+        <span class="hljs-keyword">if</span> (!slide.input) {
+            slide.input = createInput(slide.name, slide.value, slide.range);
+        }
+        moveSlider(slider, slide, slide.value, <span class="hljs-literal">true</span>);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">initializeInput</span>(<span class="hljs-params">input</span>) </span>{
+        <span class="hljs-keyword">var</span> name = input.getAttribute(<span class="hljs-string">'name'</span>);
+        <span class="hljs-keyword">var</span> range = input.parentNode;
+        <span class="hljs-keyword">var</span> slider = findSlider(name, range);
+        <span class="hljs-keyword">if</span> (!slider) {
+            initializeSlider(createSlider(name, input.getAttribute(<span class="hljs-string">'value'</span>), range));
+        }
+    }
+
+    addListener(<span class="hljs-string">'mousedown'</span>, beginHandleDrag, <span class="hljs-built_in">document</span>.documentElement);
+    addListener(<span class="hljs-string">'keydown'</span>, handleSlide, <span class="hljs-built_in">document</span>.documentElement);
+
+    <span class="hljs-keyword">var</span> initializeSliders = partial(each, initializeSlider);
+    <span class="hljs-keyword">var</span> initializeInputs = partial(each, initializeInput);
+    
+    <span class="hljs-built_in">window</span>.initRangeSliders = partial(each, invoke, [
+        compose(initializeSliders, partial(getSliders, <span class="hljs-built_in">document</span>)),
+        compose(initializeInputs, partial(getSliderInputs, <span class="hljs-built_in">document</span>))
+    ]);
+
+    addListener(<span class="hljs-string">'DOMContentLoaded'</span>, <span class="hljs-built_in">window</span>.initRangeSliders, <span class="hljs-built_in">window</span>);
+
+})();</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/range/range.js"><span>/components/raw/range/range.js</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">frontend\src\components\01-Components\Range\range.js</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">8.3 KB</span>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+
+
+    
+    <div class="Browser-panel" data-role="tab-panel" id="browser-31f270b99598c88c64f04d41bdb9e662-panel-info">
+    <ul class="Meta">
+        <li class="Meta-item">
+            <strong class="Meta-key">Handle:</strong>
+            <span class="Meta-value">@range</span>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Preview:</strong>
+            <span class="Meta-value">
+                <ul>
+                    <li><a data-no-pjax href="../preview/range.html"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                    <li><a data-no-pjax href="../render/range.html"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                </ul>
+            </span>
+        </li>
+        <li class="Meta-item">
+            <strong class="Meta-key">Filesystem Path:</strong>
+            <span class="Meta-value">frontend\src\components\01-Components\Range\Range.html</span>
+        </li>
+        
+        
+    </ul>
+</div>
+
+    
+    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-31f270b99598c88c64f04d41bdb9e662-panel-notes">
+    <div class="Prose Prose--condensed">
+        
+        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
+        
+    </div>
+</div>
+
+    
+
+</div>
+
+</div>
+
+
+    
+
+</div>
+
+
+            </div>
+        </div>
+
+        <div class="Frame-handle" data-role="frame-resize-handle"></div>
+        
+        <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
+            <nav class="Navigation">
+
+    
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-components">
+    <h3 class="Tree-title">components</h3>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-components">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Components</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button.html" data-pjax>
+                <span>Button</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="example.html" data-pjax>
+                <span>Example</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
+                <span>Range</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="rating.html" data-pjax>
+                <span>Rating</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-modules">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Modules</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="filters.html" data-pjax>
+                <span>Filters</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hotel.html" data-pjax>
+                <span>Hotel</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="map.html" data-pjax>
+                <span>Map</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-pages">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Pages</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="search-results.html" data-pjax>
+                <span>Search Results</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+
+    
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-docs">
+    <h3 class="Tree-title">documentation</h3>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/backend.html" data-pjax>
+                <span>Backend</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/frontend.html" data-pjax>
+                <span>Frontend</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../index.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+
+    
+
+
+</nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.1"></script>
+
+
+
+</body>
+</html>
