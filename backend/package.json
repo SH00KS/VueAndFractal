@@ -5,7 +5,7 @@
     "build": "backpack build"
   },
   "devDependencies": {
-    "backpack-core": "0.0.7"
+    "backpack-core": "0.8.4"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
